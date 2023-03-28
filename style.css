@@ -63,3 +63,15 @@ main {
   align-items: center;
   flex-wrap: wrap;
 }
+.card-character{
+  width: 20rem;
+  height: 10rem;
+  background-color: rgb(77, 58, 5);
+  border: groove 5px  rgb(124, 92, 6);
+  margin: 1rem;
+  display: flex;
+}
+.card-character > img{
+  width: 50%;
+  height: 100%;
+}
