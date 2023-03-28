@@ -1,6 +1,7 @@
 const txtCharacter = document.getElementById("txt-character");
 const containerCards = document.getElementById("containerCards");
 const URL1 = "https://rickandmortyapi.com/api/character";
+const URL2 = "https://rickandmortyapi.com/api/character/?name="
 const createCard = (character) => {
   const card = document.createElement("div");
   card.classList.add("card-character");
@@ -37,4 +38,11 @@ const generateAllCharacters = async () => {
   data.map(character => createCard(character));
 }
 
+const getCharacterByName = async () => {
+  containerCards.innerHTML = "";
+  const data = await getApi(URL2 + event.target.value);
+  data.map(character => createCard(character));
+}
 window.addEventListener('DOMContentLoaded', generateAllCharacters);
+txtCharacter.addEventListener('keyup', getCharacterByName)
+
