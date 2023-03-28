@@ -1,6 +1,6 @@
 const txtCharacter = document.getElementById("txt-character");
 const containerCards = document.getElementById("containerCards");
-const URL = "https://rickandmortyapi.com/api/character";
+const URL1 = "https://rickandmortyapi.com/api/character";
 const createCard = (character) => {
   const card = document.createElement("div");
   card.classList.add("card-character");
