@@ -19,6 +19,21 @@ const createCard = (character) => {
   card.appendChild(imgCard);
   card.appendChild(containerDescription);
 
+
+
+
   containerCards.appendChild(card);
 };
 
+
+const getApi = async (URL) => {
+  const response = await fetch(URL);
+  const data = await response.json();
+  return data.results;
+}
+const generateAllCharacters = async () => {
+  const data = await getApi(URL1);
+  data.map(character => createCard(character));
+}
+
+window.addEventListener('DOMContentLoaded', generateAllCharacters);
