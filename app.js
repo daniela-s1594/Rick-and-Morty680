@@ -1,5 +1,5 @@
 const txtCharacter = document.getElementById("txt-character");
-const containerCard = document.getElementById("containerCards");
+const containerCards = document.getElementById("containerCards");
 const createCard = (character) => {
   const card = document.createElement("div");
   card.classList.add("card-character");
@@ -10,15 +10,15 @@ const createCard = (character) => {
 
   const containerDescription = document.createElement("div");
   containerDescription.classList.add("description-card");
+
+  const nameCharacter = document.createElement("h2");
+  nameCharacter.textContent = character.name;
+  const genderCharacter = document.createElement("p");
+  genderCharacter.textContent = "Gender: " + character.gender;
+
+  card.appendChild(imgCard);
+  card.appendChild(containerDescription);
+
+  containerCards.appendChild(card);
 };
-/*
-<div id="containerCards" class="container-cards">
-      <div class="card-character">
-        <img src="img-card.webp.jpg" alt="img-card">
-        <div class="description-card">
-          <h2>Rick and morty</h2>
-          <p>Gender: Male</p>
-        </div>
-      </div>
-    </div>
-*/
+
