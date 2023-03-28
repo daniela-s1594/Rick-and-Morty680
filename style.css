@@ -103,3 +103,6 @@ footer{
   position: fixed;
   bottom: 0;
 }
+footer > a{
+  color:rgb(235, 240, 245)
+}
