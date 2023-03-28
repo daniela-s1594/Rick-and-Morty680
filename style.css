@@ -44,14 +44,21 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
-.finder-character{
+.finder-character {
   width: 30rem;
   height: 1rem;
   font-size: 1.5rem;
   border-radius: 20px;
   background-color: rgb(14, 14, 14);
   padding: 1rem;
-  color:rgb(245, 252, 234);
+  color: rgb(245, 252, 234);
+}
+.containerCards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
