@@ -19,7 +19,9 @@ header {
 }
 h1 {
   font-size: 5rem;
-  animation: title 1s infinite;
+  text-shadow: 0 0 15px  rgb(000, 000, 000);
+    color:rgb(169, 247, 52);
+  animation: title 2s infinite;
   font-family: "Alkatra", cursive;
 }
 @keyframes title {
