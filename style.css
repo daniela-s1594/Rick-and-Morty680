@@ -54,7 +54,7 @@ main {
   padding: 1rem;
   color: rgb(245, 252, 234);
 }
-.containerCards {
+.container-cards {
   width: 100%;
   height: auto;
   display: flex;
