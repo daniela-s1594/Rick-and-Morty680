@@ -53,6 +53,7 @@ main {
   background-color: rgb(14, 14, 14);
   padding: 1rem;
   color: rgb(245, 252, 234);
+  font-family: "Alkatra", cursive;
 }
 .container-cards {
   width: 100%;
