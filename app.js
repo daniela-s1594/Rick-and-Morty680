@@ -25,6 +25,9 @@ const createCard = (character) => {
   const genderCharacter = document.createElement("p");
   genderCharacter.textContent = "Gender: " + character.gender;
 
+  containerDescription.appendChild(nameCharacter);
+  containerDescription.appendChild(genderCharacter);
+  
   card.appendChild(imgCard);
   card.appendChild(containerDescription);
 
